@@ -17,11 +17,17 @@ module.exports = {
 				// Text Colors
 				primaryText: "var(--primary-text)",
 				secondaryText: "var(--secondary-text)",
-				whiteText: "hsl(0, 0, 100%)",
+				tertiaryText: "var(--tertiary-text)",
 				// Key shadows
 				mainKeyShadow: "var(--key-shadow)",
 				resetKeyShadow: "var(--reset-key-shadow)",
 				submitKeyShadow: "var(--submit-key-shadow)",
+			},
+			boxShadow: {
+				keyShadow: "0px 4px 0px 0px black",
+			},
+			screens: {
+				mobile: "400px",
 			},
 		},
 	},

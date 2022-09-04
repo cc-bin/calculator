@@ -21,8 +21,9 @@
 	--submit-key-shadow: hsl(6, 70%, 34%);
 
 	/* Text */
-	--primary-text: hsl(221, 14%, 31%);
+	--primary-text: #fff;
 	--secondary-text: hsl(221, 14%, 31%);
+	--tertiary-text: #fff;
 }
 
 .light-theme {
@@ -44,6 +45,7 @@
 	/* Text */
 	--primary-text: hsl(60, 10%, 19%);
 	--secondary-text: hsl(60, 10%, 19%);
+	--tertiary-text: #fff;
 }
 
 .purple-theme {
@@ -64,7 +66,8 @@
 
 	/* Text */
 	--primary-text: hsl(52, 100%, 62%);
-	--secondary-text: hsl(198, 20%, 13%);
+	--secondary-text: hsl(52, 100%, 62%);
+	--tertiary-text: hsl(198, 20%, 13%);
 }
 
 body {
