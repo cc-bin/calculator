@@ -1,3 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+.dark-theme {
+	/* Background colors */
+	--bg-main: hsl(222, 26%, 31%); /*main background*/
+	--bg-keypad: hsl(223, 31%, 20%); /*toggle background, keypad background*/
+	--bg-screen: hsl(224, 36%, 15%); /*screen background*/
+
+	/* Keys colors */
+	--key-bg: hsl(30, 25%, 89%);
+	--key-shadow: hsl(28, 16%, 65%);
+
+	--reset-key-bg: hsl(225, 21%, 49%);
+	--reset-key-shadow: hsl(224, 28%, 35%);
+
+	--submit-key-bg: hsl(6, 63%, 50%);
+	--submit-key-shadow: hsl(6, 70%, 34%);
+
+	/* Text */
+	--primary-text: hsl(221, 14%, 31%);
+	--secondary-text: hsl(221, 14%, 31%);
+}
+
+.light-theme {
+	/* Background colors */
+	--bg-main: hsl(0, 0%, 90%); /*main background*/
+	--bg-keypad: hsl(0, 5%, 81%); /*toggle background, keypad background*/
+	--bg-screen: hsl(0, 0%, 93%); /*screen background*/
+
+	/* Keys colors */
+	--key-bg: hsl(45, 7%, 89%);
+	--key-shadow: hsl(35, 11%, 61%);
+
+	--reset-key-bg: hsl(185, 42%, 37%);
+	--reset-key-shadow: hsl(185, 58%, 25%);
+
+	--submit-key-bg: hsl(25, 98%, 40%);
+	--submit-key-shadow: hsl(25, 99%, 27%);
+
+	/* Text */
+	--primary-text: hsl(60, 10%, 19%);
+	--secondary-text: hsl(60, 10%, 19%);
+}
+
+.purple-theme {
+	/* Background colors */
+	--bg-main: hsl(268, 75%, 9%); /*main background*/
+	--bg-keypad: hsl(268, 71%, 12%); /*toggle background, keypad background*/
+	--bg-screen: hsl(268, 71%, 12%); /*screen background*/
+
+	/* Keys colors */
+	--key-bg: hsl(268, 47%, 21%);
+	--key-shadow: hsl(290, 70%, 36%);
+
+	--reset-key-bg: hsl(281, 89%, 26%);
+	--reset-key-shadow: hsl(285, 91%, 52%);
+
+	--submit-key-bg: hsl(176, 100%, 44%);
+	--submit-key-shadow: hsl(177, 92%, 70%);
+
+	/* Text */
+	--primary-text: hsl(52, 100%, 62%);
+	--secondary-text: hsl(198, 20%, 13%);
+}
+
+body {
+	font-family: "League Spartan", sans-serif;
+}
