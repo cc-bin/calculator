@@ -70,6 +70,86 @@
 	--tertiary-text: hsl(198, 20%, 13%);
 }
 
+@layer base {
+	/********** Range Input Styles **********/
+	/*Range Reset*/
+	input[type="range"] {
+		-webkit-appearance: none;
+		appearance: none;
+		background: transparent;
+		cursor: pointer;
+		width: 56px;
+	}
+	input[type="range"]::-webkit-slider-thumb:hover {
+		filter: brightness(125%);
+	}
+
+	input[type="range"]::::-moz-range-thumb:hover {
+		filter: brightness(125%);
+	}
+
+	/* Removes default focus */
+	input[type="range"]:focus {
+		outline: none;
+	}
+
+	/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+	/* slider track */
+	input[type="range"]::-webkit-slider-runnable-track {
+		background: var(--bg-keypad);
+		border-radius: 20px;
+		height: 20px;
+		padding: 4px;
+	}
+
+	/* slider thumb */
+	input[type="range"]::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		background-color: var(--submit-key-bg);
+		height: 12px;
+		width: 12px;
+		border-radius: 50%;
+	}
+
+	/******** Firefox styles ********/
+	/* slider track */
+	input[type="range"]::-moz-range-track {
+		background: var(--bg-keypad);
+		border-radius: 20px;
+		height: 20px;
+		padding: 4px;
+	}
+
+	input[type="range"]::-moz-range-thumb {
+		border: none;
+		border-radius: 0;
+		background-color: var(--submit-key-bg);
+		height: 12px;
+		width: 12px;
+		border-radius: 50%;
+	}
+
+	@media (min-width: 640px) {
+		input[type="range"] {
+			width: 80px;
+		}
+		input[type="range"]::-webkit-slider-runnable-track {
+			height: 28px;
+		}
+		input[type="range"]::-webkit-slider-thumb {
+			width: 20px;
+			height: 20px;
+		}
+		input[type="range"]::-moz-range-track {
+			height: 28px;
+		}
+		input[type="range"]::-moz-range-thumb {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
 body {
 	font-family: "League Spartan", sans-serif;
 }

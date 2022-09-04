@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+import ThemeChanger from "./ThemeChanger";
 
 const Main = () => {
+	const [theme, setTheme] = useState(
+		JSON.parse(localStorage.getItem("theme")) || {
+			themeName: "dark-theme",
+			themeId: "1",
+		}
+	);
+
 	return (
-		<main className='dark-theme w-full h-screen bg-mainBg flex items-center justify-center overflow-y-scroll'>
+		<main
+			className={`transition-all duration-200 ease-linear w-full h-screen bg-mainBg flex items-center justify-center overflow-y-scroll + ${theme.themeName}`}>
 			{/* Calculator container */}
 			<div className=' h-full w-full max-w-lg flex flex-col justify-center p-6 my-auto'>
 				{/* Name and theme switch container*/}
 				<div className='flex items-center justify-between text-primaryText'>
 					<h1 className='text-[32px]'>calc</h1>
-					<div className='uppercase text-[14px]'>Theme</div>
+					<div className='flex justify-between items-end gap-3 sm:gap-6 text-xs sm:text-sm'>
+						<h3 className='uppercase font-thin tracking-widest'>Theme</h3>
+						{/* Theme slider */}
+						<ThemeChanger theme={theme} setTheme={setTheme} />
+					</div>
 				</div>
 
 				{/* Output screen container*/}
