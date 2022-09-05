@@ -26,7 +26,7 @@ const ThemeChanger = ({ theme, setTheme }) => {
 				<p>2</p>
 				<p>3</p>
 			</div>
-			<div className='flex'>
+			<div className='flex '>
 				<input
 					defaultValue={theme.themeId}
 					name='slider'
