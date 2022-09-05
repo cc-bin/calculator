@@ -28,6 +28,7 @@ const ThemeChanger = ({ theme, setTheme }) => {
 			</div>
 			<div className='flex '>
 				<input
+					aria-label='Theme slider'
 					defaultValue={theme.themeId}
 					name='slider'
 					type='range'

@@ -57,7 +57,7 @@ const Home = () => {
 					<div className='flex items-center justify-between text-primaryText'>
 						<h1 className='text-[32px]'>calc</h1>
 						<div className='flex justify-between items-end gap-3 sm:gap-6 text-xs sm:text-sm'>
-							<h3 className='uppercase font-thin tracking-widest'>Theme</h3>
+							<h2 className='uppercase font-thin tracking-widest'>Theme</h2>
 							{/* Theme slider */}
 							<ThemeChanger theme={theme} setTheme={setTheme} />
 						</div>
