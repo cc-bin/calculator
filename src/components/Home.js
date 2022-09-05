@@ -3,7 +3,7 @@ import Button from "./Button";
 import Screen from "./Screen";
 import ThemeChanger from "./ThemeChanger";
 
-const Main = () => {
+const Home = () => {
 	const [theme, setTheme] = useState(
 		JSON.parse(localStorage.getItem("theme")) || {
 			themeName: "dark-theme",
@@ -50,7 +50,7 @@ const Main = () => {
 	return (
 		<>
 			<main
-				className={`transition-all duration-200 ease-linear w-full h-screen bg-mainBg flex items-center justify-center overflow-y-scroll + ${theme.themeName}`}>
+				className={`transition-all duration-200 ease-linear w-full h-[calc(100vh-20px)] bg-mainBg flex items-center justify-center overflow-y-scroll + ${theme.themeName}`}>
 				{/* Calculator container */}
 				<div className=' h-full w-full max-w-lg flex flex-col justify-center p-6 my-auto'>
 					{/* Name and theme switch container*/}
@@ -109,9 +109,19 @@ const Main = () => {
 					</div>
 				</div>
 			</main>
-			<footer></footer>
+			<footer
+				className={`transition-all duration-200 ease-linear text-primaryText bg-mainBg text-center text-sm ${theme.themeName}`}>
+				Challenge by{" "}
+				<a
+					href='https://www.frontendmentor.io?ref=challenge'
+					target='_blank'
+					rel='noopener'>
+					Frontend Mentor
+				</a>
+				. Coded by <a href='https://github.com/Squashim'>Squashim</a>.
+			</footer>
 		</>
 	);
 };
 
-export default Main;
+export default Home;
