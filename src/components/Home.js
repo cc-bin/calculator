@@ -115,7 +115,7 @@ const Home = () => {
 				<a
 					href='https://www.frontendmentor.io?ref=challenge'
 					target='_blank'
-					rel='noopener'>
+					rel='noreferrer'>
 					Frontend Mentor
 				</a>
 				. Coded by <a href='https://github.com/Squashim'>Squashim</a>.
