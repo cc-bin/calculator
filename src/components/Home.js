@@ -32,14 +32,22 @@ const Home = () => {
 
 	const clear = () => {
 		setResult("0");
+		setError("");
 	};
+
+	function calc(val) {
+		return new Function("return " + val)();
+	}
 
 	const calculate = () => {
 		try {
 			if (result.includes("/0")) {
 				setResult("0");
 				setError("Cannot divide by 0!");
-			} else setResult(eval(result).toString());
+			} else {
+				const resultOutput = calc(result);
+				setResult(resultOutput.toString());
+			}
 		} catch (error) {
 			if (error.toString().includes("SyntaxError")) {
 				setError("Wrong syntax!");
@@ -50,7 +58,7 @@ const Home = () => {
 	return (
 		<>
 			<main
-				className={`transition-all duration-200 ease-linear w-full h-[calc(100vh-20px)] bg-mainBg flex items-center justify-center overflow-y-scroll + ${theme.themeName}`}>
+				className={` transition-all duration-200 ease-linear w-full min-h-screen bg-mainBg flex items-center justify-center  ${theme.themeName}`}>
 				{/* Calculator container */}
 				<div className=' h-full w-full max-w-lg flex flex-col justify-center p-6 my-auto'>
 					{/* Name and theme switch container*/}
@@ -110,7 +118,7 @@ const Home = () => {
 				</div>
 			</main>
 			<footer
-				className={`transition-all duration-200 ease-linear text-primaryText bg-mainBg text-center text-sm ${theme.themeName}`}>
+				className={` transition-all duration-200 ease-linear text-primaryText bg-mainBg text-center text-sm ${theme.themeName}`}>
 				Challenge by{" "}
 				<a
 					href='https://www.frontendmentor.io?ref=challenge'
