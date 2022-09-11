@@ -97,19 +97,6 @@
 		outline: none;
 	}
 
-	/***** Chrome, Safari, Opera and Edge Chromium styles *****/
-	/* slider track */
-	/* input[type="range"]::-webkit-slider-runnable-track {
-		background: var(--bg-keypad);
-		border-radius: 20px;
-		width: 56px;
-		height: 20px;
-		padding: 4px;
-		cursor: pointer;
-		width: 56px;
-		transition: 0.4s all ease-out;
-	} */
-
 	/* slider thumb */
 	input[type="range"]::-webkit-slider-thumb {
 		-webkit-appearance: none;
