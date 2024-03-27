@@ -117,17 +117,7 @@ const Home = () => {
 					</div>
 				</div>
 			</main>
-			<footer
-				className={` transition-all duration-200 ease-linear text-primaryText bg-mainBg text-center text-sm ${theme.themeName}`}>
-				Challenge by{" "}
-				<a
-					href='https://www.frontendmentor.io?ref=challenge'
-					target='_blank'
-					rel='noreferrer'>
-					Frontend Mentor
-				</a>
-				. Coded by <a href='https://github.com/Squashim'>Squashim</a>.
-			</footer>
+			
 		</>
 	);
 };
