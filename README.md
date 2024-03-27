@@ -35,14 +35,5 @@ Your users should be able to:
 - **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
 
 
-### Links
-
-- Solution URL: [https://www.frontendmentor.io/solutions/responsive-calculator-app-with-react-and-tailwind-hSHFZnYKHo](https://www.frontendmentor.io/solutions/responsive-calculator-app-with-react-and-tailwind-hSHFZnYKHo)
-- Live Site URL: [https://calculator-app-tau-gray.vercel.app/](https://calculator-app-tau-gray.vercel.app/)
-
-## Author
-
-- Website - [@Squashim](https://github.com/Squashim)
-- Frontend Mentor - [@Squashim](https://www.frontendmentor.io/profile/Squashim)
 
 **Have fun building!** 🚀
