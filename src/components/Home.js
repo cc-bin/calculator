@@ -43,14 +43,14 @@ const Home = () => {
 		try {
 			if (result.includes("/0")) {
 				setResult("0");
-				setError("Cannot divide by 0!");
+				setError("0 से विभाजित नहीं किया जा सकता!");
 			} else {
 				const resultOutput = calc(result);
 				setResult(resultOutput.toString());
 			}
 		} catch (error) {
 			if (error.toString().includes("SyntaxError")) {
-				setError("Wrong syntax!");
+				setError("गलत वाक्यविन्यास!");
 			}
 		}
 	};
@@ -63,9 +63,9 @@ const Home = () => {
 				<div className=' h-full w-full max-w-lg flex flex-col justify-center p-6 my-auto'>
 					{/* Name and theme switch container*/}
 					<div className='flex items-center justify-between text-primaryText'>
-						<h1 className='text-[32px]'>calc</h1>
+						<h1 className='text-[32px]'>कैलकुलेटर</h1>
 						<div className='flex justify-between items-end gap-3 sm:gap-6 text-xs sm:text-sm'>
-							<h2 className='uppercase font-thin tracking-widest'>Theme</h2>
+							<h2 className='uppercase font-thin tracking-widest'>विषय</h2>
 							{/* Theme slider */}
 							<ThemeChanger theme={theme} setTheme={setTheme} />
 						</div>
@@ -81,9 +81,9 @@ const Home = () => {
 							<Button value='8' theme='key' text='8' onClick={handleClick} />
 							<Button value='9' theme='key' text='9' onClick={handleClick} />
 							<Button
-								value='del'
+								value='मिटाना'
 								theme='deleteKey'
-								text='del'
+								text='मिटाना'
 								onClick={backspace}
 							/>
 
@@ -102,9 +102,9 @@ const Home = () => {
 							<Button value='*' theme='key' text='x' onClick={handleClick} />
 
 							<Button
-								value='reset'
+								value='रीसेट'
 								theme='resetKey'
-								text='reset'
+								text='रीसेट'
 								onClick={clear}
 							/>
 							<Button
